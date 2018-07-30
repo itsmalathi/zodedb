@@ -1,0 +1,9 @@
+COMPILER:=gcc
+SRC_FILE:=dbbmain.c
+TEST_FILE:=dbb.c
+INCLUDE_FILE:=dbb.h
+LINK:=-L.
+LIBRARY:=-lmydbb
+EXECUTABLE_NAME:=zodedb
+zodedb:
+	${COMPILER} -o ${EXECUTABLE_NAME} ${SRC_FILE} ${TEST_FILE} ${INCLUDE_FILE } ${LINK} ${LIBRARY}
